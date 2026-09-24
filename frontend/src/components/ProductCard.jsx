@@ -1,9 +1,10 @@
 import {Heart, MapPin, Star} from 'lucide-react';
 import '../App.css';
+import {Link} from 'react-router-dom';
 
 function ProductCard({product}) {
   return (
-    <article className="market-product-card">
+    <Link to={`/product/${product.id}`} className="market-product-card">
       <div className={`market-product-image ${product.color}`}>
         <img src={product.image} alt={product.name} />
 
@@ -40,7 +41,7 @@ function ProductCard({product}) {
           </span>
         </div>
       </div>
-    </article>
+    </Link>
   );
 }
 

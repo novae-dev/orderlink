@@ -1,5 +1,6 @@
 import {BrowserRouter, Link, Route, Routes} from 'react-router-dom';
 import Marketplace from './pages/Marketplace';
+import ProductDetails from './pages/ProductDetails';
 import './App.css';
 
 function Home () {
@@ -68,6 +69,7 @@ function App () {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/marketplace" element={<Marketplace />} />
+        <Route path="/product/:id" element={<ProductDetails />} />;
       </Routes>
     </BrowserRouter>
   );
