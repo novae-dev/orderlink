@@ -1,6 +1,6 @@
 import {ArrowLeft, Minus, Plus, ShoppingBag, Trash2} from 'lucide-react';
 import {Link} from 'react-router-dom';
-import {useCart} from '../context/CartContext';
+import {useCart} from '../context/useCart';
 import '../App.css';
 
 function Cart () {
